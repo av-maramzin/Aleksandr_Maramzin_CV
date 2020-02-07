@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Aleksandr Maramzin} % Your name
+%\address{Temporary: Flat 11, 96 Holyrood Road, Edinburgh, United Kingdom, EH8 8FH} % Your address
+%\address{Permanent: Flat 17, 5/1 Chapaeva Street, Kirov, Russian Federation, 610035} % Your secondary addess (optional)
+%\address{(+7)9654343122 \\ maramzinalexandr@gmail.com} % Your phone number and email
+\address{maramzinalexandr@gmail.com} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\bf {\large Moscow Institute of Physics and Technology (MIPT)}} \hfill {\em 2010-2014 (BS), 2014-2016 (MS)} 
+\\ Bachelor and Master of Applied Mathematics and Physics
+\\ Department of Radio Engineering and Cybernetics
+\\ {\small \textit{\textbf{Overall GPA} is 4.48/5.00 (BS), 4.52/5.00 (MS)}
+\\ \textit{\textbf{Bachelor's Thesis}: "Investigation of negative side effects on the memory subsystem of standard x86 HW data prefetchers in the environment of experimental highly parallel microprocessor architecture".}
+\\ \textit{\textbf{Master's Thesis}: "Adaptation of standard x86 microprocessor performance estimation methodology (by the means of software simulation) to architecture with binary translation".}}
+
+%{\bf The University of Edinburgh} \hfill {\em September 2017 - August 2018} 
+%\\ Master of Science by Research
+%\\ School of Informatics
+%\\ Center for Doctoral Training (CDT) in Pervasive Parallelism
+%\\ Institute of Computing Systems Architecture
+%\\ Edinburgh, United Kingdom
+%\\ \textit{With Merit}
+%\\ \textit{MSc by Research Thesis: "Software Metrics for Parallelism".}
+
+{\bf {\large The University of Edinburgh}} \hfill {\em 2017-2018 (MSc by Research), 2018-Present} 
+\\ MSc by Research \textit{(With Merit)}
+\\ Center for Doctoral Training (CDT) in Pervasive Parallelism
+\\ School of Informatics
+\\ Edinburgh, United Kingdom
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ABOUT ME SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{About me}
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+\item [Short] A technical specialist with a background and a high-level understanding of CPU architecture, compilation technologies, platforms (peripheral devices, drivers, DMA controllers, PCI, etc.). I have applied and understand the basics of machine learning. I have a fundamental education in math and physics obtained in a top-tier Russian university with a solid computer science component. I can dive deeper into my areas of specialization with a minimum required learning. I am eager to extend my expertise to other technical areas as well. My main programming language is C/C++. I use Python and Bash for auxiliary tasks. I work in Unix-like environment (Bash, Make, CMake, Vim). A systematic and self-motivated person comfortable with working independently as well as a team player.
+\end{description}
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Technical Skills}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l}
+Programming Languages \ & \textbf{C/C++} {\footnotesize (main)}, Python {\footnotesize (auxiliary)}, Java {\footnotesize (used once for a class project)}\\
+Assembly Languages \ & x86, LLVM IR\\
+Machine Learning \ & Scikit-Learn {\footnotesize (used for one project)}\\
+Programming Environment \ & Vim, CMake, GNU Make, Unix{\footnotesize -like}, Bash Shell, Git, SVN, Latex\\
+\end{tabular}
+
+{\bf Code Samples}\newline
+{\it 
+\$\{GITHUB\}={\color{red} ``https://github.com/av-maramzin``}\newline
+\$\{C\_CXX\}=\{{\color{red} ``\$\{GITHUB\}/PParMetrics/src``}, {\color{red} ``\$\{GITHUB\}/PParMetrics/include``}\}\newline 
+\$\{C\_CXX\}+={\color{red} ``\$\{GITHUB\}/DCP/abstract``}\newline
+\$\{PYTHON\}=\{{\color{red} ``\$\{GITHUB\}/icc-opt-report-compiler``}, {\color{red} ``\$\{GITHUB\}/PParMetrics/scripts/ml``}\}
+}
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{{\large The University of Edinburgh}}{\textit{September 11, 2017 - Present}}{Postgraduate Research Student}{}
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}, width=0.95\textwidth]
+\item [Group] Center for Doctoral Training (CDT) in Pervasive Parallelism. Institute for Computing Systems Architecture. School of Informatics.
+\item [Compiling Techniques Coursework.] {\footnotesize (5000 Java LOC)} Developed a basic (non-optimizing) compiler. The latter compiles a subset of the C language to MIPS architecture and runs it on SPIM MIPS simulator. Developed the whole front-end (lexical, syntax and semantic analysis) as well as the back-end (code generation for MIPS).
+\item [ML-based Parallelization Assistant] {\footnotesize (5000 C/C++, 4000 Python LOC)} Application of Machine Learning (ML) in compilers literature review. Collected static code features for loops of SNU NAS benchmark suite using LLVM Pass Framework. Parsed Intel C/C++ compiler parallelization reports in order to label loops. Trained ML-based model of loop parallelizability using scikit-learn. Published AI-SEPS 2019 paper.
+\item [Data-Centric Parallelization] Automatic data structure recognition literature review. Feasibility study for SPEC CPU2006 and Olden benchmarks. Olden benchmarks parallelization with algorithmic skeletons.
+\item [Publication.] AI-SEPS 2019: Proceedings of the 6th ACM SIGPLAN International Workshop on AI-Inspired and Empirical Methods for Software Engineering on Parallel Computing Systems October 2019 Pages 1–10 https://doi.org/10.1145/3358500.3361567
+\end{description}
+
+\end{rSubsection}
+\begin{rSubsection}{{\large Auriga Moscow}}{\textit{December 5, 2016 - July 14, 2017}}{Software Engineer}{}
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}, width=0.95\textwidth]
+\item [Role] Contractor software engineer on a project of a world's major microprocessor production company. Worked in the platform part of a full platform functional simulator.
+\item [Technologies] C/C++, Python.
+\item [Tasks] {\bf DMA controller model.} Developed a software model of a DMA controller (according to device technical specification). Controller maintains a ring buffer with its sender/receiver ifaces for packets transmission. Developed a device driver (using Python) to unit-test the model.
+{\bf Error collection functionality.} Developed information gathering functionality on the receipt of a reset event signal. Linked-list of enumerated PCI devices and dumped x86 MSRs state are saved inside the device for a post-reset crash investigation.
+{\bf Bugfixing and support}
+\end{description}
+\end{rSubsection}
+
+\begin{rSubsection}{{\large Intel R\&D Moscow}}{\textit{June 26, 2012 - September 15, 2016}}{Undergraduate/Graduate Software Engineering Intern}{}
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}, width=0.95\textwidth]
+\item [Joint University Program] 4 years on a joint university program, equivalent to 3 full-time years of on-site project internship work. Used the results of my work to defend my Bachelor's and Master's theses at Moscow Institute of Physics and Technology (MIPT).
+\item [Projects and Work] Research projects on HW/SW co-design with binary translation (BT). Worked in cycle-accurate simulators (C/C++) of CPU microarchitecture. One is that of an experimental highly parallel architecture and the other is the main simulator of conventional x86 core used at Intel. Worked in the memory subsystem model (x86 cache hierarchy, x86 hardware prefetchers). Conducted a research on negative side effects (cache pollution, buffer overflows with useless prefetches, etc.) of x86 hardware prefetching in the experimental architecture. In the x86 core simulator Aleksandr implemented required HW support for aggressive compiler optimizations and some microarchitectural refinements. Aleksandr enabled all benchmark traces to run in accordance with the standard performance modelling methodology accepted at Intel in the context of BT system by implementing required support on the microarchitectural warm up stage.
+\end{description}
+\end{rSubsection}
+
+\end{rSection}
+
+\end{document}
